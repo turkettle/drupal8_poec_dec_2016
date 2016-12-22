@@ -1,0 +1,28 @@
+uuid: 4342eb5e-bfe8-4135-8b05-b86eb544b3a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appliant
+    - node.type.advert
+id: node.advert.field_appliant
+field_name: field_appliant
+entity_type: node
+bundle: advert
+label: Candidat
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

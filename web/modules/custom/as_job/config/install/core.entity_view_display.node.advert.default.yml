@@ -1,0 +1,70 @@
+uuid: 7a54fe53-1e7c-4879-b395-56c30887400d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advert.body
+    - field.field.node.advert.field_appliant
+    - field.field.node.advert.field_company
+    - field.field.node.advert.field_img
+    - field.field.node.advert.field_localisation
+    - field.field.node.advert.field_taxo
+    - image.style.large
+    - node.type.advert
+  module:
+    - image
+    - text
+    - user
+id: node.advert.default
+targetEntityType: node
+bundle: advert
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_appliant:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_company:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_img:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_localisation:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_taxo:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: a0fe0b0c-32e2-4e11-b3a9-cc48bf6019a2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Catégorie d''annonces'
+vid: advert_category
+description: ''
+hierarchy: 0
+weight: 0

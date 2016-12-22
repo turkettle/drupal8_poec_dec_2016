@@ -1,0 +1,28 @@
+uuid: 7b392a28-3fe3-4d44-8d6b-8d34db17f19a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localisation
+    - node.type.advert
+    - taxonomy.vocabulary.localisation
+id: node.advert.field_localisation
+field_name: field_localisation
+entity_type: node
+bundle: advert
+label: Localisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localisation: localisation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
